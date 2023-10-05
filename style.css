@@ -1,0 +1,85 @@
+:root {
+  --main-color: ;
+  --main-bg-color: ;
+  --filter-bg-color: ;
+}
+
+.fa-solid {
+  color: black;
+}
+
+@media (max-width: 767.98px) {
+  body {
+    width: 100%;
+  }
+  .logo {
+    text-align: center;
+    margin: 20px 0 10px 0;
+  }
+  .logo img {
+    width: 50%;
+  }
+  .head {
+    display: flex;
+    justify-content: center;
+    background-color: #eaeaea;
+  }
+  .hero {
+    background-color: #008766;
+    width: 60%;
+  }
+  .hero h1 {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  .hero p {
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+  }
+  .btn-explor {
+    color: #ffffff;
+    background: linear-gradient(#ff79da, #9356dc);
+    width: 220px;
+    height: 50px;
+    border-radius: 50px;
+    border: none;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+  .number {
+    background-color: #9747ff;
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    text-align: center;
+    vertical-align: baseline;
+  }
+  .card {
+    width: 200px;
+    height: 280px;
+    background-color: rgb(227, 125, 0);
+    margin-bottom: 20px;
+  }
+  .card img {
+    object-fit: cover;
+    height: 120px;
+    width: 100%;
+  }
+  .new {
+    height: 30px;
+    width: 80px;
+    color: #008766;
+    background-color: #99e2d0;
+    border-radius: 5%;
+    text-align: center;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
