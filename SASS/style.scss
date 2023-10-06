@@ -66,7 +66,7 @@ $background-color_6: #353535;
 .btn-hero {
   display: flex;
   justify-content: center;
-  padding-bottom: 40px;
+  padding-bottom: 35px;
 }
 .btn-explor {
   color: $color_1;
@@ -79,6 +79,7 @@ $background-color_6: #353535;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
 }
 .function {
   display: flex;
@@ -160,6 +161,7 @@ $background-color_6: #353535;
   p {
     display: block;
     margin: 5px 0 0 17px;
+    color: #131313;
   }
   img {
     object-fit: cover;
@@ -173,19 +175,22 @@ $background-color_6: #353535;
     left: 320px;
   }
 }
+
 .new {
-  position: relative;
-  top: 45px;
+  position: absolute;
   left: 280px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 30px;
-  width: 80px;
-  color: $color_4;
-  background-color: $background-color_5;
-  border-radius: 5%;
+  p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    width: 80px;
+    color: $color_4;
+    background-color: $background-color_5;
+    border-radius: 5%;
+  }
 }
+
 footer {
   display: flex;
   background-color: $background-color_6;
