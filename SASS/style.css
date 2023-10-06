@@ -155,11 +155,11 @@
   }
   .card h3 {
     display: inline-block;
-    margin: 20px 10px 0 0;
+    margin: 20px 0 0 -10px;
   }
   .card p {
     display: block;
-    margin: 5px 0 0 27px;
+    margin: 5px 0 0 17px;
   }
   .card img {
     -o-object-fit: cover;
