@@ -1,0 +1,12 @@
+a {
+  &:active {
+    text-decoration: none;
+    color: $color_1;
+  }
+  &:visited {
+    text-decoration: none;
+    color: $color_1;
+  }
+  text-decoration: none;
+  color: $color_1;
+}

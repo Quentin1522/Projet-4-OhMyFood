@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <title>Menu-Le délice des sens</title>
-    <link rel="stylesheet" type="text/css" href="Pages/menu.css" />
+    <link rel="stylesheet" type="text/css" href="../SASS/menu.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link
@@ -18,7 +18,9 @@
     <div id="wrapper">
       <header>
         <div class="head">
-          <i class="fa-solid fa-arrow-right fa-flip-horizontal"></i>
+          <a href="../index.html">
+            <i class="fa-solid fa-arrow-right fa-flip-horizontal"></i
+          ></a>
         </div>
         <div class="logo">
           <a href="#"
@@ -26,6 +28,7 @@
           /></a>
         </div>
         <img
+          class="main-img"
           src="../restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
           alt="image de plat"
         />
@@ -37,55 +40,73 @@
           <div class="card-container">
             <h2>ENTRÉES</h2>
             <article class="card">
-              <h3>Tartare de thon</h3>
-              <p>Assaisnnée au yuzu</p>
-              <p>25€</p>
+              <div class="name">
+                <h3>Tartare de thon</h3>
+                <p>Assaisnnée au yuzu</p>
+              </div>
+              <div class="price"><p>25€</p></div>
             </article>
             <article class="card">
-              <h3>Bouchée de homard croustillant</h3>
-              <p>Et sa farandole de petits légumes</p>
-              <p>35€</p>
+              <div class="name">
+                <h3>Bouchée de homard croustillant</h3>
+                <p>Et sa farandole de petits légumes</p>
+              </div>
+              <div class="price"><p>35€</p></div>
             </article>
             <article class="card">
-              <h3>Poulet rôti au herbes de Provence</h3>
-              <p>Et sa crème de truffe</p>
-              <p>40€</p>
+              <div class="name">
+                <h3>Poulet rôti au herbes de Provence</h3>
+                <p>Et sa crème de truffe</p>
+              </div>
+              <div class="price"><p>40€</p></div>
             </article>
-            <h2>Plats</h2>
+            <h2 class="plats">Plats</h2>
             <article class="card">
-              <h3>Poulet rôti au herbes de Provence</h3>
-              <p>Et sa crème de truffe</p>
-              <p>40€</p>
+              <div class="name">
+                <h3>Poulet rôti au herbes de Provence</h3>
+                <p>Et sa crème de truffe</p>
+              </div>
+              <div class="price"><p>40€</p></div>
             </article>
             <article class="card">
-              <h3>Langouste rôtie</h3>
-              <p>Et ses légumes de saisons</p>
-              <p>35€</p>
+              <div class="name">
+                <h3>Langouste rôtie</h3>
+                <p>Et ses légumes de saisons</p>
+              </div>
+              <div class="price"><p>35€</p></div>
             </article>
             <article class="card">
-              <h3>Côte de bœuf Angus</h3>
-              <p>Et sa purée de panais</p>
-              <p>44€</p>
+              <div class="name">
+                <h3>Côte de bœuf Angus</h3>
+                <p>Et sa purée de panais</p>
+              </div>
+              <div class="price"><p>44€</p></div>
             </article>
             <h2>Desserts</h2>
             <article class="card">
-              <h3>Farandole de dessert</h3>
-              <p>Du Chef</p>
-              <p>18€</p>
+              <div class="name">
+                <h3>Farandole de dessert</h3>
+                <p>Du Chef</p>
+              </div>
+              <div class="price"><p>18€</p></div>
             </article>
             <article class="card">
-              <h3>Crème brulée</h3>
-              <p>Revisitée</p>
-              <p>22€</p>
+              <div class="name">
+                <h3>Crème brulée</h3>
+                <p>Revisitée</p>
+              </div>
+              <div class="price"><p>22€</p></div>
             </article>
             <article class="card">
-              <h3>Tiramisu</h3>
-              <p>À la noisette</p>
-              <p>23€</p>
+              <div class="name">
+                <h3>Tiramisu</h3>
+                <p>À la noisette</p>
+              </div>
+              <div class="price"><p>23€</p></div>
             </article>
           </div>
         </section>
-        <div class="btn">
+        <div class="btn-conteneur">
           <button class="btn">Commander</button>
         </div>
       </main>
