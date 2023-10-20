@@ -32,6 +32,7 @@ a {
 .main-img {
   object-fit: cover;
   width: 100%;
+  height: 350px;
 }
 section {
   background-color: #f6f6f6;
@@ -44,11 +45,32 @@ section {
   top: -40px;
 }
 
-.fa-heart {
-  position: relative;
-  right: -300px;
-  bottom: 15px;
-  width: 10px;
+.title-heart {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  margin-right: 30px;
+}
+
+.fa-heart,
+.full {
+  position: absolute;
+}
+
+.full {
+  opacity: 0;
+  transition-property: all;
+  transition-duration: 2s;
+  line-height: 1;
+}
+
+.full:hover {
+  opacity: 1;
+  color: transparent;
+  background-image: linear-gradient(#ff79da, #9356dc);
+  background-clip: text;
+  -webkit-background-clip: text;
+  line-height: 1;
 }
 
 h1 {
@@ -68,11 +90,68 @@ h1 {
   background-color: #ffffff;
   margin-bottom: 15px;
   border-radius: 15px;
-  width: 90%;
+  width: 95%;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1);
-  padding: 15px;
   display: flex;
   justify-content: space-between;
+}
+
+.card:hover .check {
+  background-color: #a9e0d1;
+  display: block;
+}
+
+@keyframes price {
+  from {
+    transform: translateX(80%);
+  }
+  to {
+    transform: translateX(40%);
+  }
+}
+
+.check {
+  display: none;
+  background-color: #a9e0d1;
+  padding: 0;
+  width: 7%;
+  border-radius: 0 15px 15px 0;
+  animation: check 3s forwards;
+}
+
+.check div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+@keyframes check {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+i.fa-circle-check {
+  background-color: #ffffff;
+  line-height: 1;
+  border-radius: 100%;
+  color: #a9e0d1;
+  transform: translate(-50%, -50%);
+  animation: tourne 1s forwards;
+}
+
+@keyframes tourne {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(720deg);
+  }
 }
 
 .name {
@@ -83,11 +162,31 @@ h1 {
   gap: 10px;
 }
 
+.name,
+.price {
+  padding: 15px;
+}
+
+.card:hover .price {
+  position: absolute;
+  right: 37px;
+  line-height: 5;
+  animation: check 3s forwards;
+}
+
 .price {
   font-weight: bold;
   font-family: "Roboto";
   display: flex;
   align-items: flex-end;
+  transition: left 0.3s ease;
+}
+
+.test {
+  overflow: hidden;
+  display: flex;
+  justify-content: end;
+  background-color: #9356dc;
 }
 
 .card h3 {
@@ -138,6 +237,12 @@ section h2 {
   line-height: normal;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
 }
+
+.btn:hover {
+  transform: scale(1.1);
+  background: linear-gradient(#9356dc, #ff79da);
+}
+
 footer {
   display: flex;
   background-color: #353535;
@@ -163,13 +268,45 @@ footer div {
 }
 /*screen tablette*/
 @media (min-width: 768px) {
-  .fa-heart {
-    left: 580px;
-    bottom: 20px;
-  }
-
   section h2 {
     left: -408px;
+  }
+
+  .title-heart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 120px;
+  }
+
+  .fa-heart {
+    left: 650px;
+  }
+
+  @keyframes check {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes tourne {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(720deg);
+    }
+  }
+
+  .card {
+    width: 90%;
+  }
+
+  .card:hover .price {
+    right: 120px;
   }
 
   .plats {
@@ -179,13 +316,16 @@ footer div {
 
 /*screen desktop*/
 @media (min-width: 1025px) {
-  .fa-heart {
-    left: 780px;
-    bottom: 20px;
-  }
-
   section h2 {
     left: -590px;
+  }
+
+  .card {
+    width: 90%;
+  }
+
+  .card:hover .price {
+    right: 170px;
   }
 
   .plats {
@@ -195,6 +335,29 @@ footer div {
   .logo img {
     width: 25%;
   }
+
+  .fa-heart {
+    left: 850px;
+  }
+
+  @keyframes check {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes tourne {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(720deg);
+    }
+  }
+
   footer,
   footer div {
     display: flex;
