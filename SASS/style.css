@@ -361,6 +361,12 @@ footer div {
     position: absolute;
   }
 
+  .card .fa-heart {
+    position: absolute;
+    left: 880px;
+    line-height: 1;
+  }
+
   .twoo {
     left: 350px;
   }
@@ -375,13 +381,6 @@ footer div {
 
   .two {
     left: 840px;
-  }
-
-  .card .fa-heart {
-    position: absolute;
-    left: 900px;
-    bottom: -150px;
-    line-height: 1;
   }
 
   .card .htwo {
