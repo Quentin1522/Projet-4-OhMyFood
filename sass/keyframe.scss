@@ -1,0 +1,67 @@
+@keyframes loader {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+    z-index: 100;
+    display: block;
+  }
+  40% {
+    z-index: 100;
+    display: block;
+  }
+  60% {
+    opacity: 1;
+    z-index: 100;
+    display: block;
+  }
+  80% {
+    opacity: 1;
+    z-index: 100;
+    display: block;
+  }
+  100% {
+    display: none;
+    opacity: 0;
+    z-index: 0;
+  }
+}
+@keyframes spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes price {
+  from {
+    transform: translateX(80%);
+  }
+
+  to {
+    transform: translateX(40%);
+  }
+}
+
+@keyframes check {
+  from {
+    transform: translateX(100%);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes tourne {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(720deg);
+  }
+}
