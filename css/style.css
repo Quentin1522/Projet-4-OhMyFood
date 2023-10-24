@@ -221,7 +221,7 @@ body {
 }
 .card img {
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   object-fit: cover;
   width: 100%;
   height: 254px;
@@ -414,19 +414,19 @@ footer div {
   }
   .card .fa-heart {
     position: absolute;
-    left: 580px;
+    left: 620px;
     bottom: -110px;
     line-height: 1;
   }
   .card .htwo {
-    left: 1290px;
+    left: 1330px;
   }
   .card .hthree {
     bottom: -480px;
   }
   .card .hfour {
     bottom: -480px;
-    left: 1290px;
+    left: 1330px;
   }
   .new {
     left: 560px;
@@ -451,4 +451,4 @@ footer div {
   footer li {
     padding: 10px;
   }
-}/*# sourceMappingURL=style.css.map */
+} /*# sourceMappingURL=style.css.map */
