@@ -56,12 +56,26 @@
   }
 }
 
-@keyframes tourne {
+@keyframes pop-in {
   from {
-    transform: rotate(0deg);
+    opacity: 0;
+    transform: translateY(10px);
   }
-
   to {
-    transform: rotate(720deg);
+    opacity: 1;
+    transform: translateY(0);
   }
+}
+
+.card {
+  opacity: 0;
+  animation: pop-in 0.8s ease forwards;
+}
+
+.card:nth-child(odd) {
+  animation-delay: 0.2s;
+}
+
+.card:nth-child(even) {
+  animation-delay: 0.4s;
 }

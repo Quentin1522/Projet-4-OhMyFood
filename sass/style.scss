@@ -3,6 +3,9 @@
 @forward "../sass/background-color.scss";
 @forward "../sass/font.scss";
 
+/*screen tablette*/
+/*screen desktop*/
+/*# sourceMappingURL=style.css.map */
 * {
   font-family: $font-family_1;
   margin: 0;
@@ -27,7 +30,7 @@ body {
   margin: auto;
   border: 20px solid #eaf0f6;
   border-radius: 50%;
-  border-top: 20px solid#9356dc;
+  border-top: 20px solid #9356dc;
   width: 200px;
   height: 200px;
   animation: spinner 4s linear infinite;
@@ -59,7 +62,7 @@ body {
     font-size: 18px;
     font-style: normal;
     font-weight: 300;
-    line-height: no rmal;
+    line-height: normal;
     text-align: center;
   }
   div {
@@ -86,8 +89,8 @@ body {
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
   transition: transform 0.3s;
   &:hover {
-    transform: scale(1.1);
-    background: linear-gradient(#9356dc, #ff79da);
+    background: linear-gradient(#ff90e7, #a16eff);
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
   }
 }
 .function {
@@ -177,6 +180,7 @@ body {
     color: $color_4;
   }
   img {
+    -o-object-fit: cover;
     object-fit: cover;
     object-fit: cover;
     width: 100%;

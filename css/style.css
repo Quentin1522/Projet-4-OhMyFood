@@ -100,7 +100,7 @@ body {
   font-size: 18px;
   font-style: normal;
   font-weight: 300;
-  line-height: no rmal;
+  line-height: normal;
   text-align: center;
 }
 .hero div {
@@ -128,9 +128,10 @@ body {
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
   transition: transform 0.3s;
 }
+
 .btn:hover {
-  transform: scale(1.1);
-  background: linear-gradient(#9356dc, #ff79da);
+  background: linear-gradient(#ff90e7, #a16eff);
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
 }
 
 .function {
@@ -378,6 +379,7 @@ footer div {
   body {
     background-color: #ffffff;
   }
+
   .logo img {
     width: 25%;
   }
