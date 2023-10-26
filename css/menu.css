@@ -58,13 +58,13 @@ section {
 
 .title-heart {
   display: flex;
-  justify-content: right;
+  justify-content: center;
   align-items: center;
-  margin-right: 30px;
 }
 
-.fa-heart {
+.content-title .fa-heart {
   position: absolute;
+  line-height: 2;
 }
 
 .full {
@@ -72,7 +72,7 @@ section {
   opacity: 0;
   transition-property: all;
   transition-duration: 2s;
-  line-height: 1;
+  line-height: 2;
 }
 .full:hover {
   opacity: 1;
@@ -203,6 +203,10 @@ i.fa-circle-check {
   line-height: normal;
 }
 
+.content-title {
+  width: 100%;
+}
+
 section h2 {
   color: #000;
   font-size: 16px;
@@ -212,15 +216,8 @@ section h2 {
   text-transform: uppercase;
   font-family: "Roboto";
   margin: 20px 0 15px 0;
-  position: relative;
-  right: 155px;
   -webkit-text-decoration: underline #a9e0d1;
   text-decoration: underline #a9e0d1;
-}
-
-.plats {
-  position: relative;
-  right: 165px;
 }
 
 .btn-conteneur {
@@ -300,23 +297,6 @@ footer div {
 
 /*screen tablette*/
 @media (min-width: 768px) {
-  section h2 {
-    left: -455px;
-  }
-
-  .plats {
-    left: -465px;
-  }
-
-  .title-heart {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 120px;
-  }
-  .fa-heart {
-    left: 650px;
-  }
   @keyframes check {
     from {
       transform: translateX(100%);
@@ -341,23 +321,12 @@ footer div {
     margin: 0 auto;
   }
 
-  section h2 {
-    left: -445px;
-  }
-
-  .plats {
-    left: -455px;
-  }
-
   .card:hover .price {
     right: 85px;
   }
 
   .logo img {
     width: 25%;
-  }
-  .fa-heart {
-    left: 650px;
   }
   @keyframes check {
     from {

@@ -1,11 +1,8 @@
-@forward "../sass/color.scss";
-@forward "../sass/keyframe.scss";
 @forward "../sass/background-color.scss";
+@forward "../sass/color.scss";
 @forward "../sass/font.scss";
+@forward "../sass/keyframe.scss";
 
-/*screen tablette*/
-/*screen desktop*/
-/*# sourceMappingURL=menu.css.map */
 * {
   margin: 0;
   padding: 0;
@@ -65,27 +62,28 @@ section {
     text-transform: uppercase;
     font-family: $font-family_2;
     margin: 20px 0 15px 0;
-    position: relative;
-    right: 155px;
     -webkit-text-decoration: underline #a9e0d1;
     text-decoration: underline #a9e0d1;
   }
 }
 .title-heart {
   display: flex;
-  justify-content: right;
+  justify-content: center;
   align-items: center;
-  margin-right: 30px;
 }
-.fa-heart {
-  position: absolute;
+.content-title {
+  .fa-heart {
+    position: absolute;
+    line-height: 2;
+  }
+  width: 100%;
 }
 .full {
   position: absolute;
   opacity: 0;
   transition-property: all;
   transition-duration: 2s;
-  line-height: 1;
+  line-height: 2;
   &:hover {
     opacity: 1;
     color: $color_2;
@@ -198,10 +196,6 @@ i.fa-circle-check {
   align-items: flex-end;
   transition: left 0.3s ease;
 }
-.plats {
-  position: relative;
-  right: 165px;
-}
 .btn-conteneur {
   display: flex;
   justify-content: center;
@@ -262,51 +256,22 @@ footer {
     margin-right: 10px;
   }
 }
-@media (min-width: 768px) {
-  section {
-    h2 {
-      left: -455px;
-    }
+
+@media (min-width: 1025px) {
+  main {
+    width: 70%;
+    margin: 0 auto;
   }
-  .plats {
-    left: -465px;
-  }
-  .title-heart {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 120px;
-  }
-  .fa-heart {
-    left: 650px;
-  }
-  @media (min-width: 1025px) {
-    main {
-      width: 70%;
-      margin: 0 auto;
-    }
-    section {
-      h2 {
-        left: -445px;
+  .card {
+    &:hover {
+      .price {
+        right: 85px;
       }
     }
-    .plats {
-      left: -455px;
-    }
-    .card {
-      &:hover {
-        .price {
-          right: 85px;
-        }
-      }
-    }
-    .logo {
-      img {
-        width: 25%;
-      }
-    }
-    .fa-heart {
-      left: 650px;
+  }
+  .logo {
+    img {
+      width: 25%;
     }
   }
 }

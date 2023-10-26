@@ -1,18 +1,14 @@
-@forward "../sass/color.scss";
-@forward "../sass/keyframe.scss";
 @forward "../sass/background-color.scss";
+@forward "../sass/color.scss";
 @forward "../sass/font.scss";
+@forward "../sass/keyframe.scss";
 
-/*screen tablette*/
-/*screen desktop*/
-/*# sourceMappingURL=style.css.map */
 * {
   font-family: $font-family_1;
   margin: 0;
   padding: 0;
 }
 body {
-  width: 100%;
   width: 100%;
 }
 .loader {
@@ -112,7 +108,6 @@ body {
 }
 .f {
   display: flex;
-  justify-content: flex-start;
   align-items: center;
   height: 70px;
   width: 90%;
@@ -138,8 +133,6 @@ body {
   }
 }
 .number {
-  position: absolute;
-  left: 17px;
   background-color: $background-color_3;
   color: $color_1;
   width: 25px;
@@ -148,6 +141,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-left: -10px;
 }
 .restaurant {
   h2 {
@@ -189,14 +183,10 @@ body {
   }
   .fa-heart {
     position: absolute;
-    left: 320px;
-    line-height: 3;
-  }
-  .htwo {
     line-height: 3;
   }
   .full {
-    line-height: 3;
+    position: absolute;
     opacity: 0;
     transition-property: all;
     transition-duration: 2s;
@@ -221,21 +211,26 @@ body {
     }
   }
 }
-.hthree {
-  line-height: 3;
+.container-heart {
+  display: flex;
+  justify-content: flex-end;
+  > div {
+    margin-right: 50px;
+  }
 }
-.hfour {
-  line-height: 3;
+.container-new {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 25px;
 }
 .new {
   position: absolute;
-  left: 260px;
   p {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 30px;
-    width: 80px;
+    padding: 5px 15px;
     color: $color_7;
     background-color: $background-color_5;
     border-radius: 5%;
@@ -297,35 +292,7 @@ footer {
     width: 33%;
   }
   .number {
-    position: absolute;
-  }
-  .card {
-    .fa-heart {
-      position: absolute;
-      left: 880px;
-      line-height: 1;
-    }
-    .htwo {
-      bottom: -520px;
-    }
-    .hthree {
-      bottom: -890px;
-    }
-    .hfour {
-      bottom: -1260px;
-    }
-  }
-  .twoo {
-    left: 350px;
-  }
-  .three {
-    left: 680px;
-  }
-  .new {
-    left: 840px;
-  }
-  .two {
-    left: 840px;
+    margin-right: 25px;
   }
 }
 @media (min-width: 1025px) {
@@ -349,15 +316,6 @@ footer {
   .step {
     width: 33%;
   }
-  .number {
-    position: absolute;
-  }
-  .twoo {
-    left: 480px;
-  }
-  .three {
-    left: 945px;
-  }
   .restaurant {
     h2 {
       margin-left: 40px;
@@ -369,28 +327,6 @@ footer {
   }
   .card {
     width: 45%;
-    .fa-heart {
-      position: absolute;
-      left: 620px;
-      bottom: -110px;
-      line-height: 1;
-    }
-    .htwo {
-      left: 1330px;
-    }
-    .hthree {
-      bottom: -480px;
-    }
-    .hfour {
-      bottom: -480px;
-      left: 1330px;
-    }
-  }
-  .new {
-    left: 560px;
-  }
-  .two {
-    left: 1280px;
   }
   footer {
     display: flex;
