@@ -62,17 +62,16 @@ section {
   align-items: center;
 }
 
-.content-title .fa-heart {
+.fa-heart {
+  margin-left: 190px;
   position: absolute;
-  line-height: 2;
+  line-height: 3;
 }
 
 .full {
-  position: absolute;
   opacity: 0;
   transition-property: all;
   transition-duration: 2s;
-  line-height: 2;
 }
 .full:hover {
   opacity: 1;
